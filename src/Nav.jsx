@@ -1,7 +1,10 @@
+import troll from '../src/images/troll.png'
+
 export default function Nav() {
     return(
-        <nav>
-            Hello
+        <nav className='navbar'>
+            <img src={troll} alt="troll face" height="35px" />
+            <span className='logo'>Meme Generator</span>
         </nav>
     )
 }

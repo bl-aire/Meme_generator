@@ -4,3 +4,17 @@ body{
   margin: 0;
   font-family: 'Karla', sans-serif;
 }
+
+.navbar{
+  display: flex;
+  align-items: center;
+  padding: 1.5em;
+  background-color: #000000;
+}
+
+.logo{
+  padding: 0 0 0 0.3em;
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #fff;
+}
