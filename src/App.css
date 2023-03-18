@@ -18,3 +18,43 @@ body{
   font-size: 1.2em;
   color: #fff;
 }
+
+.section{
+  padding: 1.2em;
+
+}
+
+.input{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 1em;
+  margin: 0 0 2em 0;
+}
+
+.text{
+  width: 50%;
+  border: 1px solid #D5D4D8;
+  padding: 1.2em 1em;
+}
+
+.button{
+  width: 100%;
+  color: #fff;
+  background-color: #0D0D0D;
+  border: none;
+  padding: 1.5em 2em;
+}
+
+.button:hover{
+  background-color: #fff;
+  color: #000000;
+  border: 1px solid #000000;
+}
+
+.text, .button{
+  border-radius: 5px;
+  font-size: 1em;
+  line-height: 14px;
+  font-weight: 400;
+}

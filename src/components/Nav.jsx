@@ -1,4 +1,4 @@
-import troll from '../src/images/troll.png'
+import troll from '../images/troll.png'
 
 export default function Nav() {
     return(
