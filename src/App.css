@@ -1,9 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500&display=swap');
 
-body{
-  margin: 0;
-  font-family: 'Karla', sans-serif;
-}
 
 .navbar{
   display: flex;
@@ -36,6 +31,7 @@ body{
   width: 50%;
   border: 1px solid #D5D4D8;
   padding: 1.2em 1em;
+  font-family: "Karla", sans-serif;  /*Font style not applying to elements? */
 }
 
 .button{
@@ -44,6 +40,7 @@ body{
   background-color: #0D0D0D;
   border: none;
   padding: 1.5em 2em;
+  font-family: "Karla", sans-serif;
 }
 
 .button:hover{
