@@ -57,16 +57,15 @@
 }
 
 .memeContainer{
-  /*display: flex;
+  display: flex;
   justify-content: center;
-  align-items: center;*/
+  align-items: center;
   position: relative;
   margin: 2em 0;
 }
 
 .meme{
   max-width: 100%;
-  /*margin: 3em auto;*/
   border-radius: 3px;
 }
 
