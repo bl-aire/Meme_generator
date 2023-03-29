@@ -10,13 +10,18 @@ export default function Form() {
         bottomText: "",
         randomImage: "http://i.imgflip.com/1bij.jpg" 
     })
-    const [allMemeImages, setAllMemeImages] = React.useState(memes)
+    const [allMemeImages, setAllMemeImages] = React.useState([])
     
+        
+    React.useEffect(() => {
+        fetch("https://api.imgflip.com/get_memes")
+            .then(res => res.json())
+            .then(data => setAllMemeImages(data.data.memes))
+    }, [])
 
     function getMeme() {
-        const data = allMemeImages.data.memes
-        const randomNumber = Math.floor(Math.random() * data.length)
-        const url = (data[randomNumber].url)
+        const randomNumber = Math.floor(Math.random() * allMemeImages.length)
+        const url = (allMemeImages[randomNumber].url)
         setMeme(prevMeme => ({
             ...prevMeme,
             randomImage: url
